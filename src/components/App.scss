@@ -1,0 +1,92 @@
+@import 'src/styles/globals';
+
+p,
+li {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+
+.can {
+    width: 400px;
+    height: 200px;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/Nunito.ttf');
+}
+html {
+    font-size: 62.5%; /* normalizes fontsize for REM, 1REM = 10px */
+}
+
+body {
+    color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $backgroundColor;
+    align-items: center;
+    font-family: 'Nunito';
+}
+
+.title {
+    font-size: 3.5rem;
+    display: block;
+}
+
+#root {
+    width: 50%;
+}
+
+#app {
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+a,
+.nav-link {
+    color: $primaryColor;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 2rem;
+}
+a {
+    font-size: 1.5rem;
+}
+
+.nav-link--active {
+    color: $secondaryColor;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.logo {
+    animation-name: logo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: block;
+    width: 35%;
+    margin: 2rem auto;
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0.35;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 0.35;
+        transform: rotate(360deg);
+    }
+}
