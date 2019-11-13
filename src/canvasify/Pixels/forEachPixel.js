@@ -32,4 +32,4 @@ const forEachPixel = function(fun) {
     }
 }
 
-CanvasRenderingContext2D.prototype.mapPixels = mapPixels
+CanvasRenderingContext2D.prototype.forEachPixel = mapPixels

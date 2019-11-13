@@ -1,1 +1,2 @@
 import './mapPixels'
+import './forEachPixel'
