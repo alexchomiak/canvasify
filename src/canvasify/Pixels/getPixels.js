@@ -3,8 +3,8 @@
  * File Created: Monday, 18th November 2019 12:43:49 pm
  * Author: Alex Chomiak
  *
- * Last Modified: Monday, 18th November 2019 12:48:19 pm
- * Modified By: Alex Chomiak 
+ * Last Modified: Monday, 18th November 2019 12:48:56 pm
+ * Modified By: Alex Chomiak
  *
  * Author Github: https://github.com/alexchomiak
  */
@@ -44,6 +44,7 @@ CanvasRenderingContext2D.prototype.getPixels = function() {
       let b = imageData.data[index + 2]
       let a = imageData.data[index + 3]
 
+      // * Push pixels to array
       pixels.push({
         r,
         g,
